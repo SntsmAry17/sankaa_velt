@@ -135,7 +135,7 @@
 
       drawingForm.reset();
       document.querySelector("#drawing-note").value = "";
-      document.querySelector("#clear").click();
+      window.clearDoodleCanvas(false);
       setStatus(drawingStatus, "Sent! Thanks for the doodle.", "success");
     } catch (error) {
       const message = error.message === "drawing-too-large"
